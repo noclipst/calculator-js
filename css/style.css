@@ -4,21 +4,46 @@
     box-sizing: border-box;
 }
 
-.calculator {
-    border: 1px solid black;
-}
-
 .page-container,
 .calculator,
 .result-container,
-.keypad {
+.keypad,
+.keypad-column {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.page-container,
+.calculator,
+.result-container {
+    gap: 40px;
+}
+
+.result-container {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.keypad {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .calculator {
     flex-direction: column;
+}
+
+.calculator,
+.keypad {
+    border: 1px solid black;
+    width: 500px;
+}
+
+
+.button {
+    width: 70px;
+    height: 70px;
 }
 
