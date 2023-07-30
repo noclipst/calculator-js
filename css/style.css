@@ -6,22 +6,34 @@
 
 .page-container,
 .calculator,
+.calculator-container,
 .result-container,
 .keypad,
-.keypad-column {
+.keypad-column,
+#result-text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.calculator-container {
+    margin: 50px;
+}
+
 .page-container,
 .calculator,
-.result-container {
+.calculator-container {
     gap: 40px;
 }
 
-.result-container {
+.page-container {
+    margin-top: 50px;
+}
+
+.result-container,
+#result-text {
+    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -35,10 +47,9 @@
     flex-direction: column;
 }
 
-.calculator,
-.keypad {
+.calculator {
     border: 1px solid black;
-    width: 500px;
+    
 }
 
 
